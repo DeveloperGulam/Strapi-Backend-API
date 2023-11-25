@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colleges",
+  "info": {
+    "singularName": "college",
+    "pluralName": "colleges",
+    "displayName": "College",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "year_founded": {
+      "type": "date",
+      "unique": false
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "string"
+    }
+  }
+}

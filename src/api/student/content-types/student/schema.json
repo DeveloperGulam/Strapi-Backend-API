@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "year_of_batch": {
+      "type": "string"
+    },
+    "course": {
+      "type": "string",
+      "required": true
+    },
+    "college_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::college.college"
+    }
+  }
+}
